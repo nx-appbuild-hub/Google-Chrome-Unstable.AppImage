@@ -35,6 +35,7 @@ all: clean init
 	rm -f $(PWD)/build/Boilerplate.AppDir/*.desktop 		|| true
 	rm -f $(PWD)/build/Boilerplate.AppDir/*.png 		  	|| true
 	rm -f $(PWD)/build/Boilerplate.AppDir/*.svg 		  	|| true
+	rm -f $(PWD)/build/Boilerplate.AppDir/lib64/libstdc++.so.6*
 
 	cp --force $(PWD)/AppDir/*.desktop 			$(PWD)/build/Boilerplate.AppDir/ || true
 	cp --force $(PWD)/AppDir/*.png 				$(PWD)/build/Boilerplate.AppDir/ || true
